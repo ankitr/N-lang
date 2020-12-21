@@ -1,5 +1,6 @@
-# Build output
-dist/
+# Built editor.worker.js
+src/editor.worker.js
+src/editor.worker.js.map
 
 ## Node
 

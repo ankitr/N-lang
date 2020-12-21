@@ -23,5 +23,6 @@ monaco.editor.create(container, {
     'function x() {',
     '\tconsole.log("Hello world!");',
     '}'
-  ].join('\n')
+  ].join('\n'),
+  theme: 'material'
 })
