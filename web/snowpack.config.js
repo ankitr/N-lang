@@ -1,4 +1,12 @@
 module.exports = {
+  plugins: [
+    [
+      '@snowpack/plugin-webpack',
+      {
+        sourceMap: true,
+      },
+    ],
+  ],
   installOptions: {
     sourceMap: true
   },
@@ -9,9 +17,5 @@ module.exports = {
   mount: {
     src: '/',
     'node_modules/monaco-editor/esm/vs/editor': '/',
-    'node_modules/monaco-editor/esm/vs/base/browser/ui/codicons/codicon': {
-      url: '/',
-      static: true
-    }
-  }
+  },
 }

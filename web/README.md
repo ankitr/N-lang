@@ -7,9 +7,29 @@ experience.
 **grammar in the [js/ folder](../js/) first. See its README for more info.
 
 ```sh
-# Install global dependencies
+# Install dependencies
+npm install
+```
+
+First, you should build Monaco's editor.worker.js:
+
+```sh
+# Install Rollup globally
 npm install --global rollup
 
-# Install more dependencies
-npm install
+# Build editor.worker.js so it works with Snowpack
+npm run build:editor
+```
+
+Then start the Snowpack dev server:
+
+```sh
+npm start
+```
+
+And when you're done and ready to release:
+
+```sh
+# Build
+npm run build
 ```

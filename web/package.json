@@ -25,6 +25,7 @@
     "n-lang": "file:../js"
   },
   "devDependencies": {
+    "@snowpack/plugin-webpack": "^2.2.0",
     "@tsconfig/recommended": "^1.0.1",
     "snowpack": "^2.18.5"
   }
